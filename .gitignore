@@ -1,47 +1,8 @@
-# RESOURCES FILES ------
 
-# Cell Ranger outputs
-resources/process_validation_datasets/K562_DC_TAP_Seq/cell_ranger_output/*
-resources/process_validation_datasets/WTC11_DC_TAP_Seq/cell_ranger_output/*
-
-# Duplciates analysis resources (gasperini matrix)
-resources/main_figure_1_and_2/duplicate_pairs_analysis/perturb_sce.rds
-
-# Reads v UMIs comparison
-resources/main_figure_1_and_2/downsampling_reads_for_UMIs/crisprdi_direct_capture/*
-resources/main_figure_1_and_2/downsampling_reads_for_UMIs/moi3_fixed/molecule_info.h5
-resources/main_figure_1_and_2/downsampling_reads_for_UMIs/moi6_fixed/molecule_info.h5
-
-# RESULTS FILES -------
-
-# Dataset Processing
-results/process_validation_datasets/*/differential_expression/final_sceptre_object.rds
-results/process_validation_datasets/*/differential_expression_w_negative_controls/final_sceptre_object.rds
-results/process_validation_datasets/*/differential_expression/sceptre_diffex_input.rds
-results/process_validation_datasets/*/perturb_sce.rds
-results/process_validation_datasets/*/power_analysis/combined_power*
-results/process_validation_datasets/*/singleton_differential_expression/final_sceptre_object.rds
-
-# Calculating Confidence Intervals
-results/formatted_dc_tap_results/*/final_sceptre_object.rds
-
-# Duplicates analysis
-results/main_figure_1_and_2/duplicate_pairs_analysis/differential_expression/final_sceptre_object.rds
-results/main_figure_1_and_2/duplicate_pairs_analysis/differential_expression/sceptre_diffex_input.rds
-results/main_figure_1_and_2/duplicate_pairs_analysis/power_analysis/*
-!results/main_figure_1_and_2/duplicate_pairs_analysis/power_analysis/output_0.13gStd_Sceptre_perCRE.tsv
-results/main_figure_1_and_2/duplicate_pairs_analysis/perturb_sce.rds
-results/main_figure_1_and_2/duplicate_pairs_analysis/raw_counts.rds
-# Temporarily excluding this file here because its a little over github's 50Mb file limit (76Mb) - should gzip
-results/main_figure_1_and_2/duplicate_pairs_analysis/results_with_element_gene_pair_categories.tsv
-
-# Large sceptre objects in compare_replicates
-results/main_figure_1_and_2/compare_replicates/*/final_sceptre_object.rds
-
-# Genome annotation files
-results/genome_annotation_files/*
-
+# User Generated Results
+results/*
 
 # OTHER ----------
 ARCHIVE/*
+.DS_Store
 .snakemake/*
